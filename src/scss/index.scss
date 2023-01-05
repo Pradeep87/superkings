@@ -1,0 +1,11 @@
+
+body{
+  font-family: "Inter"
+}
+
+@import './variables.scss';
+@import './mixings.scss';
+
+.app{
+  border: 1px solid $color;
+}
