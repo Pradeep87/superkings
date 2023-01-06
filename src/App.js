@@ -3,6 +3,7 @@ import { BrowserRouter,Route,Routes }from 'react-router-dom'
 import {HomePage}from './pages'
 import {Navbar} from './components'
 import WebFont, { load } from 'webfontloader';
+import { pageRoutes } from './constants/Constants';
 
 
 const App = () => {
@@ -19,7 +20,7 @@ const App = () => {
    <BrowserRouter>
     <Navbar/>
    <Routes>
-      <Route path='/' element={<HomePage/>} />
+      <Route path={pageRoutes.home} element={<HomePage/>} />
    </Routes>
    </BrowserRouter>
   )
