@@ -48,3 +48,53 @@
     object-fit: contain;
 
 }
+
+.SearchInputBox{
+    height: 100%;
+    width: 100%;
+    background-image:("https://qcs24.com/assets/gallery/1669478424415_31facd80-5bdc-4de8-9035-74836ecdb7f5__UR3000,600_SX3000_FMwebp__(1)_(1).jpg");
+    background-color: rgba(0, 0,0,0.3);
+    background-position: center;
+    background-size: cover;
+@include flex(row,center,center);
+input{
+padding:10px;
+width:360px;
+border: none;
+outline: none;
+font-family: "Inter";
+font-size: 14px;
+
+}
+}
+
+.tabs{
+    list-style-type: none;
+@include flex(row,center,center);
+padding: 30px;
+border-radius: 20px 20px 0px 0px;
+margin-bottom: -20px;
+li{
+    color: #fff;
+    font-weight: 700;
+    margin-right: 20px;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+.active{
+    border-bottom: 2px solid #fff;
+}
+}
+
+
+
+//search box
+
+.searchBox{
+    background-color: #fff;
+    @include flex(row, space-between,center);
+    border-radius: 20px;
+    padding: 10px;
+
+}

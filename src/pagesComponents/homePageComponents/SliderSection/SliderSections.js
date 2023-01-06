@@ -48,7 +48,7 @@ const SliderSections = () => {
     return (
       <div className='homePageSections' >
         <SuperStoreCard />
-  <Slider images={images} sliderClass={'mySwiper'} />
+  <Slider images={images} sliderClass={'mySwiper'} searchInput={true} />
       </div>
     )
   }

@@ -1,6 +1,6 @@
 // ContentWrapper
 
-.ContentWrapper{
+.ContentWrapper {
     width: 80%;
     margin: auto;
 
@@ -16,14 +16,15 @@
 
 
 
-.menuContainer{
-    display: flex;
-    width: 80%;
-    margin: auto;
-    position: relative;
-    @include flex(row, flex-start, center);
+    .menuContainer {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        @include flex(row, flex-start, center);
 
-}
+    }
+
     .rotate {
         transform: rotate(180deg);
         transition: all 0.5s;
@@ -73,55 +74,85 @@
 }
 
 
-.categoryList{
+.categoryList {
     width: 50%;
-    li{
+
+    li {
         display: flex;
     }
-a{
-    text-decoration: none;
-    color: #000;
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    h4 {
+        width: 250px;
+        padding: 2px 20px;
+
+        text-align: center;
+        border-bottom: 1px solid #112a44;
+        margin-bottom: 50px
+    }
+
 }
-h4{
-   width: 250px;
-   padding:2px 20px ;
-
-    text-align: center;
-    border-bottom:1px solid #112a44;
-margin-bottom: 50px
-}
-
-}
 
 
 
-.categoryCard{
+.categoryCard {
     @include flex(row, space-between, center);
     padding: 20px;
 
-&:hover{
-    background-color: whitesmoke;
-}
-    img{
-        width: 40px;
-        height: 40px;
-        margin-right:20px ;
+    &:hover {
+        background-color: whitesmoke;
     }
 
-    .text{
+    img {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+    }
+
+    .text {
         color: gray;
     }
 }
 
-.catContainer{
+.catContainer {
     @include flex(row, space-between, flex-start);
 
 }
 
-.mainCatHeading{
+.mainCatHeading {
     @include flex(row, flex-start, flex-start);
-   
+
 
 }
 
+
+// SelectBox
+
+.SelectBox {
+    background-color: #fff;
+    position: relative;
+    .selected{
+        min-width: 100px;
+        @include flex(row, space-between, flex-start);
+    
+    }
+    .options {
+        width: 100%;
+        padding: 10px;
+        list-style-type: none;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background-color: #fff;
+        li{
+            padding: 5px;
+            cursor: pointer;
+        }
+
+    }
+}
 
