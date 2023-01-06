@@ -1,4 +1,41 @@
-.homePageSections{
-    
+.homePageSections {
+    padding: 20px;
+    height: 450px;
+    @include flex(row, space-between, flex-start);
+}
 
+.mySwiper {
+    width: 88%;
+    height: 410px;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.sliderImage {
+    object-fit: contain;
+
+}
+
+.SuperStoreCard {
+    width: 10%;
+    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 6%), 0 1px 2px rgb(0 0 0 / 12%);
+
+    ul {
+        list-style-type: none;
+
+        li {
+            padding: 20px 0px;
+            border-bottom: 1px solid whitesmoke;
+            @include flex(row, flex-start, center);
+
+        }
+    }
+}
+
+.reactIcons {
+    font-size: 20px;
+    margin-right: 10px;
 }
