@@ -4,16 +4,11 @@ import { logo, catIcon } from '../../assets'
 import { pageRoutes } from '../../constants/Constants'
 import { AiOutlineMenu, AiOutlineDown, AiOutlineShoppingCart, AiFillEnvironment, AiFillAndroid } from "react-icons/ai"
 import { GiJusticeStar, } from "react-icons/gi"
+import {CategoryCard} from '../'
 
 const Button = ({ name }) => <button className='linkBtn'>{name}</button>
 
-const CategoryCard = ({ heading, text, icon }) => <div className='categoryCard' >
-  <img src={icon} alt="" />
-  <div>
-    <p>{heading}</p>
-    <span className='text' >{text}</span>
-  </div>
-</div>
+
 
 
 const Card = ({ icon, heading, text }) => <div className='offerCards' >
