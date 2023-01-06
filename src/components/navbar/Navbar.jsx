@@ -126,7 +126,7 @@ const MainMenu = () => {
           className={show ? "active" : ""}
           style={{width:"150px"}}
         >
-          Anniversary <AiOutlineDown className={show ? 'rotate' : ""} />
+            Anniversary <AiOutlineDown className={show ? 'rotate' : ""} />
         </li>
       </ul>
 
