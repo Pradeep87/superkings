@@ -114,7 +114,8 @@ const CatCardData = [
 
 ]
 
-const MainMenu = ({ show, setIsShown }) => {
+const MainMenu = () => {
+  const [show, setIsShown] = useState(false)
   return (
     <div className='menus'>
       <ul>
@@ -123,6 +124,7 @@ const MainMenu = ({ show, setIsShown }) => {
           onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
           className={show ? "active" : ""}
+          style={{width:"150px"}}
         >
           Anniversary <AiOutlineDown className={show ? 'rotate' : ""} />
         </li>
@@ -151,7 +153,7 @@ const MainMenu = ({ show, setIsShown }) => {
 
 const Navbar = () => {
 
-  const [show, setIsShown] = useState(false)
+  
 
   return (
     <header>
@@ -175,11 +177,13 @@ const Navbar = () => {
         </div>
       </div>
       <div className="menuSection">
-
-        <MainMenu
-          setIsShown={setIsShown}
-          show={show}
-        />
+<div className='menuContainer'>
+<MainMenu  />
+        <MainMenu/>
+        <MainMenu/>
+        <MainMenu/>
+</div>
+        
 
 
       </div>
