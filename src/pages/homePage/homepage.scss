@@ -4,17 +4,7 @@
     @include flex(row, space-between, flex-start);
 }
 
-.mySwiper {
-    width: 88%;
-    height: 410px;
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-}
 
-.sliderImage {
-    object-fit: contain;
-
-}
 
 .SuperStoreCard {
     width: 10%;
@@ -38,4 +28,23 @@
 .reactIcons {
     font-size: 20px;
     margin-right: 10px;
+}
+
+.categorySlider{
+    height: 350px;
+}
+
+
+//swipper
+
+.mySwiper {
+    width: 90%;
+    height: 410px;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.sliderImage {
+    object-fit: contain;
+
 }

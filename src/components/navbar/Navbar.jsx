@@ -107,9 +107,9 @@ const Navbar = () => {
 
         </div>
       </div>
-      <div className='categoriesData' >
+  
       <CategoryMenu CatCardData={CatCardData} />
-      </div>
+
     </header>
 
 

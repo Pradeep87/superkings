@@ -34,6 +34,35 @@ const subCategory=[
 
 
 ]
+
+
+export const browseCategories = [
+    {
+      heading: "Browse All Categories",
+      subCategory,
+      icon:<AiOutlineSlack style={{ fontSize: 20 }} />
+    },
+    {
+      heading: "Deals",
+      subCategory,
+      icon:<AiOutlineSlack style={{ fontSize: 20 }}/>
+    },
+    {
+      heading: "Home",
+      subCategory,
+      icon:<AiOutlineSlack style={{ fontSize: 20 }}/>
+    },
+    {
+      heading: "About",
+      subCategory,
+      icon:<AiOutlineSlack style={{ fontSize: 20 }}/>
+    },
+    {
+      heading: "Shop",
+      subCategory,
+      icon:<AiOutlineSlack style={{ fontSize: 20 }}/>
+    },
+  ]
 export const CatCardData = [
     {
       heading: "Anniversary",
@@ -59,5 +88,24 @@ export const CatCardData = [
       heading: "Gifts",
       subCategory,
       icon:<AiOutlineSlack style={{ fontSize: 20 }}/>
+    },
+  ]
+
+
+
+  export const images = [
+    {
+      img: 'https://qcs24.com/assets/gallery/1669478466176_112b1bdb-0e77-4137-aad8-6a54888f360a__UR3000,600_SX3000_FMwebp_.jpg'
+    },
+  
+    {
+      img: "https://qcs24.com/assets/gallery/1669478424415_31facd80-5bdc-4de8-9035-74836ecdb7f5__UR3000,600_SX3000_FMwebp__(1)_(1).jpg"
+    },
+    {
+      img: 'https://qcs24.com/assets/gallery/1669478466176_112b1bdb-0e77-4137-aad8-6a54888f360a__UR3000,600_SX3000_FMwebp_.jpg'
+    },
+  
+    {
+      img: "https://qcs24.com/assets/gallery/1669478424415_31facd80-5bdc-4de8-9035-74836ecdb7f5__UR3000,600_SX3000_FMwebp__(1)_(1).jpg"
     },
   ]

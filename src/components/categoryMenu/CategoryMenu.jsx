@@ -13,7 +13,7 @@ const CategoryTabs = ({ data }) => {
       onMouseEnter={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}
       className={show ? "active" : ""}
-      style={{ width: "150px",marginRight:"30px" }}
+      style={{ marginRight:"30px" }}
     >
       {data.heading}<AiOutlineDown className={show ? 'rotate' : ""} style={{marginLeft:"10px"}} />
       {<div className={show ? 'overlay show' : " overlay hide"}
