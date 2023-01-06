@@ -5,10 +5,7 @@ import { pageRoutes } from '../../constants/Constants'
 import { AiOutlineMenu, AiOutlineDown, AiOutlineShoppingCart, AiFillEnvironment, AiFillAndroid } from "react-icons/ai"
 import { GiJusticeStar, } from "react-icons/gi"
 
-
-
 const Button = ({ name }) => <button className='linkBtn'>{name}</button>
-
 
 const CategoryCard = ({ heading, text, icon }) => <div className='categoryCard' >
   <img src={icon} alt="" />
@@ -28,6 +25,43 @@ const Card = ({ icon, heading, text }) => <div className='offerCards' >
     <span className='text'>{text}</span>
   </div>
 </div>
+
+
+const MainMenu = () => {
+  const [show, setIsShown] = useState(false)
+  return (
+    <div className='menus'>
+      <ul>
+
+        <li
+          onMouseEnter={() => setIsShown(true)}
+          onMouseLeave={() => setIsShown(false)}
+          className={show ? "active" : ""}
+          style={{ width: "150px" }}
+        >
+          Anniversary <AiOutlineDown className={show ? 'rotate' : ""} />
+        </li>
+      </ul>
+
+      {<div className={show ? 'overlay show' : " overlay hide"}
+        onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}>
+        <div className='catContainer' >
+          <ul className='categoryList' >
+            <h4> Anniversary  decoration  </h4>
+            {CatCardData.map((data, idx) => <Link key={idx} to={data.path}> <li ><CategoryCard {...data} /></li>
+            </Link>)}
+          </ul>
+          <ul className='categoryList' >
+            <h4> Anniversary  decoration  </h4>
+            {CatCardData.map((data, idx) => <Link key={idx} to={data.path}> <li ><CategoryCard {...data} /></li>
+            </Link>)}
+          </ul>
+        </div>
+      </div>}
+    </div>
+  )
+}
 
 
 const CardsData = [
@@ -114,46 +148,9 @@ const CatCardData = [
 
 ]
 
-const MainMenu = () => {
-  const [show, setIsShown] = useState(false)
-  return (
-    <div className='menus'>
-      <ul>
-
-        <li
-          onMouseEnter={() => setIsShown(true)}
-          onMouseLeave={() => setIsShown(false)}
-          className={show ? "active" : ""}
-          style={{width:"150px"}}
-        >
-            Anniversary <AiOutlineDown className={show ? 'rotate' : ""} />
-        </li>
-      </ul>
-
-      {<div className={show ? 'overlay show' : " overlay hide"}
-        onMouseEnter={() => setIsShown(true)}
-        onMouseLeave={() => setIsShown(false)}>
-        <div className='catContainer' >
-          <ul className='categoryList' >
-            <h4> Anniversary  decoration  </h4>
-            {CatCardData.map((data, idx) => <Link key={idx} to={data.path}> <li ><CategoryCard {...data} /></li>
-            </Link>)}
-          </ul>
-          <ul className='categoryList' >
-            <h4> Anniversary  decoration  </h4>
-            {CatCardData.map((data, idx) => <Link key={idx} to={data.path}> <li ><CategoryCard {...data} /></li>
-            </Link>)}
-          </ul>
-        </div>
-      </div>}
-    </div>
-  )
-}
 
 
 const Navbar = () => {
-
-  
 
   return (
     <header>
@@ -177,15 +174,12 @@ const Navbar = () => {
         </div>
       </div>
       <div className="menuSection">
-<div className='menuContainer'>
-<MainMenu  />
-        <MainMenu/>
-        <MainMenu/>
-        <MainMenu/>
-</div>
-        
-
-
+        <div className='menuContainer'>
+          <MainMenu />
+          <MainMenu />
+          <MainMenu />
+          <MainMenu />
+        </div>
       </div>
     </header>
 
